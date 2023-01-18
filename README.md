@@ -15,3 +15,9 @@ Para verificar apenas o teste em Order:
 ```
 npm test src/infrastructure/repository/order.repository.spec.ts
 ```
+
+Para verificar apenas o teste em event dispatcher:
+
+```
+npm test src/domain/event/@shared/event-dispatcher.spec.ts
+```
