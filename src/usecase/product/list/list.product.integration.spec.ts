@@ -25,10 +25,11 @@ describe("Test list product use case", () => {
 
   it("should list a product", async () => {
     const productRepository = new ProductRepository();
-    const product1 = new Product("1", "Product 1", 100);
+    
+    const product1 = new Product("123", "Product 1", 100);
     await productRepository.create(product1);
 
-    const product2 = new Product("2", "Product 2", 200);
+    const product2 = new Product("234", "Product 2", 200);
     await productRepository.create(product2);
     
     const usecase = new ListProductUseCase(productRepository);
